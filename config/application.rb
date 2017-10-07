@@ -1,5 +1,6 @@
 require_relative 'boot'
 
+
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
@@ -23,3 +24,4 @@ module Chemical
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
