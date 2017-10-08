@@ -1,6 +1,8 @@
-<h1><%= @chem.chemical_name %>の入出庫履歴</h1>
-
-<h2>入庫履歴</h2>
+<br>
+<p class="enteringsdiapatchings"><%= @chem.chemical_name %>の入出庫履歴</p>
+<br>
+<div class="table1">
+<p class="enteringshistory">入庫履歴</p>
 
 <table class="table table-striped table-bordered"> 
  <thead>
@@ -11,7 +13,7 @@
   </tr>
  </thead>
 
- <tbody>
+ <tbody class="tbody1">
  <% @entering.each do |entering| %>
  <tr>
    <td><%=entering.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M") %></td>
@@ -22,9 +24,10 @@
  <% end %>
  <tbody>
 <table>
+</div>
 
-
-<h2>出庫履歴</h2>
+<div class="table2">
+<p class="dispatchingshistroy">出庫履歴</p>
 
 <table class="table table-striped table-bordered"> 
  <thead>
@@ -35,7 +38,7 @@
   </tr>
  </thead>
 
- <tbody>
+ <tbody class="tbody2">
  <% @dispatching.each do |dispatching| %>
  <tr>
    <td><%=dispatching.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M") %></td>
@@ -46,3 +49,4 @@
  <% end %>
  <tbody>
 <table>
+ </div>

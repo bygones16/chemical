@@ -1,6 +1,8 @@
-<h1><%= @chem.chemical_name%>の入庫</h1>
-
-
+<br>
+<br>
+<p class='enterings'><%= @chem.chemical_name%>の入庫</p>
+<br>
+<br>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
 
@@ -16,7 +18,7 @@
         <%= f.label :entering_person, '入庫者' %>
         <%= f.text_field :entering_person, :placeholder => "入庫者を入力下さい。",class: 'form-control' %>
       </div>
-      
+ <br>     
       <%= f.submit '入庫', class: 'btn btn-primary btn-block' %>
     <% end %>
   </div>

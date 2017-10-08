@@ -14,7 +14,7 @@
  *= require_self
  */
  .navbar-default {
-  background-color: #f7f2cc;
+  background-color: #A9D0F5;
 }
 
 p.link {
@@ -25,3 +25,40 @@ p.atama {
 font-size: 200%;
 }
 
+.navbar {
+  height: 60px;
+}
+
+a.navbar-brand{
+font-size: 200%;
+color: black !important;
+vertical-align: text-bottom;
+}
+
+.nav{
+font-size: 150%;
+color: black !important;
+margin-top: 5px;
+}
+
+p.youkoso{
+font-size: 200%;
+color: black !important;
+}
+
+p.onegai{
+font-size: 150%;
+color: black !important;
+}
+
+.navbar-header{
+margin-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: red;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
