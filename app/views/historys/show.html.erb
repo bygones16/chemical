@@ -1,52 +1,56 @@
 <br>
 <p class="enteringsdiapatchings"><%= @chem.chemical_name %>の入出庫履歴</p>
 <br>
-<div class="table1">
-<p class="enteringshistory">入庫履歴</p>
 
-<table class="table table-striped table-bordered"> 
- <thead>
-  <tr>
-    <td class="text-center">日付</th>
-    <td class="text-center">入庫数</th>
-    <td class="text-center">入庫者</th>
-  </tr>
- </thead>
+<div class="row">
 
- <tbody class="tbody1">
- <% @entering.each do |entering| %>
- <tr>
-   <td><%=entering.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M") %></td>
-   <td><%=entering.entering_number %></td>
-   <td><%=entering.entering_person %></td>
+ <div class="col-sm-6">
+  <p class="enteringshistory">入庫履歴</p>
 
- </tr>
- <% end %>
- <tbody>
-<table>
-</div>
+   <table class="table table-striped table-bordered"> 
+    <thead>
+     <tr>
+      <td class="text-center">日付</th>
+      <td class="text-center">入庫数</th>
+      <td class="text-center">入庫者</th>
+     </tr>
+    </thead>
 
-<div class="table2">
-<p class="dispatchingshistroy">出庫履歴</p>
-
-<table class="table table-striped table-bordered"> 
- <thead>
-  <tr>
-    <td class="text-center">日付</th>
-    <td class="text-center">出庫数</th>
-    <td class="text-center">出庫者</th>
-  </tr>
- </thead>
-
- <tbody class="tbody2">
- <% @dispatching.each do |dispatching| %>
- <tr>
-   <td><%=dispatching.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M") %></td>
-   <td><%=dispatching.dispatching_number %></td>
-   <td><%=dispatching.dispatching_person %></td>
-
- </tr>
- <% end %>
- <tbody>
-<table>
+    <tbody class="tbody1">
+    <% @entering.each do |entering| %>
+     <tr>
+      <td><%=entering.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M") %></td>
+      <td><%=entering.entering_number %></td>
+      <td><%=entering.entering_person %></td>
+     </tr>
+    <% end %>
+   <tbody>
+  <table>
  </div>
+
+
+
+ <div class="col-sm-6">
+ <p class="dispatchingshistroy">出庫履歴</p>
+  <table class="table table-striped table-bordered"> 
+   <thead>
+    <tr>
+     <td class="text-center">日付</th>
+     <td class="text-center">出庫数</th>
+     <td class="text-center">出庫者</th>
+    </tr>
+   </thead>
+ 
+  <tbody class="tbody2">
+  <% @dispatching.each do |dispatching| %>
+     <tr>
+      <td><%=dispatching.created_at.in_time_zone('Tokyo').strftime("%Y/%m/%d %H:%M") %></td>
+      <td><%=dispatching.dispatching_number %></td>
+      <td><%=dispatching.dispatching_person %></td> 
+     </tr>
+   <% end %>
+  <tbody>
+  </table>
+ </div>
+ 
+</div>

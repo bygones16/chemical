@@ -2,15 +2,15 @@
 <br>
 <p class='atama'><%= current_user.company_name %>  薬品在庫</p>
 <br>
-<div style="display:inline-flex",class:"kensaku">
-<%= search_form_for @q, url: user_path(@user)  do |f| %>
- <%= f.text_field :chemical_name_cont, placeholder: '薬品名を入力下さい。' %>
- <%= f.submit '検索',class: 'btn btn-primary ' %>
-<% end %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div style="display:inline-flex",class:"kensaku">
+   <%= search_form_for @q, url: user_path(@user)  do |f| %>
+   <%= f.text_field :chemical_name_cont, placeholder: '薬品名を入力下さい。' %>
+   <%= f.submit '検索',class: 'btn btn-primary ' %>
+   <% end %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <p><%= link_to '新規在庫登録', new_chem_path %></p>
-
 </div>
 
+＃＃＃＃＃<button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-search"></i> 検索</button>
 
 <table class="table table-striped table-bordered"> 
  <thead>
@@ -36,4 +36,4 @@
  </tr>
 <% end %>
  </tbody>
-<table>
+</table>
