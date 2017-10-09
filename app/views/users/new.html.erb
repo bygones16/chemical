@@ -15,21 +15,22 @@
         <%= f.label :company_name, '会社名' %>
         <%= f.text_field :company_name,:placeholder => "登録する会社名を入力下さい。(20字以内)", class: 'form-control' %>
       </div>
-
+<br>
       <div class="form-group">
         <%= f.label :login_id, 'LOG_IN ID' %>
         <%= f.text_field :login_id, :placeholder => "登録するLOG_IN IDを入力下さい。(10字以内)",class: 'form-control' %>
       </div>
-
+<br>
       <div class="form-group">
         <%= f.label :password, 'PASSWORD' %>
         <%= f.password_field :password,:placeholder => "登録するPASSWORDを入力下さい。(10字以内)", class: 'form-control' %>
       </div>
-
+<br>
       <div class="form-group">
         <%= f.label :password_confirmation, 'PASSWORD (確認)' %>
         <%= f.password_field :password_confirmation, :placeholder => "上記で登録したPASSWORDを再入力下さい。(10字以内)", class: 'form-control' %>
       </div>
+<br>
 <br>
       <%= f.submit '登録', class: 'btn btn-primary btn-block' %>
     <% end %>

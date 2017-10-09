@@ -13,12 +13,13 @@
         <%= f.label :dispatching_number, '出庫数' %>
         <%= f.text_field :dispatching_number,:placeholder => "出庫数を半角数値で入力下さい。(10文字以内)", class: 'form-control' %>
       </div>
-
+<br>
       <div class="form-group">
         <%= f.label :dispatching_person, '出庫者' %>
         <%= f.text_field :dispatching_person,:placeholder => "出庫者を入力下さい。(10文字以内)", class: 'form-control' %>
       </div>
-<br>      
+<br> 
+<br>
       <%= f.submit '出庫', class: 'btn btn-primary btn-block' %>
     <% end %>
   </div>
