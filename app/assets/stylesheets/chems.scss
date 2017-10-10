@@ -31,14 +31,19 @@ color: black !important;
 text-align: center;
 }
 
-.deleteyes{
+
+.delete2 a {
 font-size: 200%;
-color: black !important;
-text-align: center;
+color: blue;
+text-decoration : underline;
 }
 
-.deleteno{
+.delete2 a:hover {
 font-size: 200%;
-color: black !important;
+color: red;
+text-decoration: underline;
+}
+
+.delete2{
 text-align: center;
 }

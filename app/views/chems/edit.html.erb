@@ -1,16 +1,16 @@
 <br>
 <br>
 <br>
-<div class='delete'><%= @chem.chemical_name %>を本当に削除しますか</div>
+<div class='delete'><%= @chem.chemical_name %>を本当に削除しますか。</div>
 <br>
 <br>
 <br>
 
-<div class='deleteyes'>
+<div class='delete2'>
    <%=link_to 'はい', chem_path(@chem.id) , :method => :delete %>
 　　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    <%=link_to 'いいえ', user_path(current_user) %>
-   </div>
+</div>
 
 
 

@@ -21,7 +21,7 @@ class DispatchingsController < ApplicationController
      redirect_to new_chem_dispatching_path
   
     elsif @dispatching.dispatching_number > (@chem.enterings.pluck(:entering_number).sum - @chem.dispatchings.pluck(:dispatching_number).sum)
-      flash[:danger] = '在庫数以上の数量を出庫できません。'
+      flash[:danger] = '在庫数より多い数量を出庫できません。'
       redirect_to new_chem_dispatching_path
       
     elsif @dispatching.save

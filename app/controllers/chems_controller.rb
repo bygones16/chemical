@@ -24,7 +24,7 @@ class ChemsController < ApplicationController
   def destroy
     @chem = Chem.find(params[:id])
     @chem.destroy
-    flash[:success] = 'メッセージを削除しました。'
+    flash[:success] = @chem.chemical_name + 'を削除しました。'
     redirect_to current_user
   end
   
